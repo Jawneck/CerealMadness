@@ -202,6 +202,14 @@ Prefab:
       propertyPath: m_Name
       value: Spoon
       objectReference: {fileID: 0}
+    - target: {fileID: 1279890684167146, guid: d673e873185b79f44aa10ffb4f368efd, type: 2}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279890684167146, guid: d673e873185b79f44aa10ffb4f368efd, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d673e873185b79f44aa10ffb4f368efd, type: 2}
   m_IsPrefabAsset: 0
@@ -253,6 +261,21 @@ Prefab:
       propertyPath: speed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 114985529129568004, guid: 26183ec60d285d246bb2af7956ffd7e9,
+        type: 2}
+      propertyPath: projectileLife
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114985529129568004, guid: 26183ec60d285d246bb2af7956ffd7e9,
+        type: 2}
+      propertyPath: distance
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114985529129568004, guid: 26183ec60d285d246bb2af7956ffd7e9,
+        type: 2}
+      propertyPath: whatIsSolid.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26183ec60d285d246bb2af7956ffd7e9, type: 2}
   m_IsPrefabAsset: 0
@@ -266,7 +289,7 @@ GameObject:
   - component: {fileID: 560720143}
   - component: {fileID: 560720142}
   - component: {fileID: 560720141}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: KitchenTile (6)
   m_TagString: Ground
   m_Icon: {fileID: 0}
