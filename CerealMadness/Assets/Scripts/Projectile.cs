@@ -6,6 +6,7 @@ public class Projectile : MonoBehaviour {
 
     public float speed;
     public float distance;
+    public int damage = 1;
     public LayerMask whatIsSolid;
 
     private void Update () {
@@ -15,6 +16,8 @@ public class Projectile : MonoBehaviour {
         if(hit.collider != null){
             if (hit.collider.CompareTag("Enemy")){
                 Debug.Log("Enemy hit");
+                //Calling TakeDamage function upon collision
+                hit.collider.GetComponent<EnemyMove>().TakeDamage(damage);
             }
         }
 

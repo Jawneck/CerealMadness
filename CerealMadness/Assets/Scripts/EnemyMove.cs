@@ -6,6 +6,7 @@ public class EnemyMove : MonoBehaviour {
 
     private float enemySpeed = 2;
     private float stoppingDistance = 0.5f;
+    private int health = 5;
 
     //Variable to hold the game object that the enemy is chasing after ie "Player"
     private Transform target;
@@ -24,5 +25,14 @@ public class EnemyMove : MonoBehaviour {
             //Moving the enemy from its position towards the targets postion at its given speed
             transform.position = Vector2.MoveTowards(transform.position, target.position, enemySpeed * Time.deltaTime);
         }
+
+        //Destroying enemy when health reaches 0
+        if(health <= 0){
+            Destroy(gameObject);
+        }
 	}
+
+    public void TakeDamage(int damage){
+        health -= damage;
+    }
 }
