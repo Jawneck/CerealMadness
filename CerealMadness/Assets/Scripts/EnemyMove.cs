@@ -8,6 +8,12 @@ public class EnemyMove : MonoBehaviour {
     private float stoppingDistance = 0.5f;
     private int health = 5;
 
+    private ParticleSystem particleSystem;
+
+    void Awake(){
+        particleSystem = GetComponent<ParticleSystem>();
+    }
+
     //Variable to hold the game object that the enemy is chasing after ie "Player"
     private Transform target;
 
@@ -34,5 +40,7 @@ public class EnemyMove : MonoBehaviour {
 
     public void TakeDamage(int damage){
         health -= damage;
+        //Starts particle system when enemy takes damage
+        particleSystem.Play();
     }
 }

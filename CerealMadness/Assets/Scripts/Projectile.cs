@@ -18,6 +18,8 @@ public class Projectile : MonoBehaviour {
                 Debug.Log("Enemy hit");
                 //Calling TakeDamage function upon collision
                 hit.collider.GetComponent<EnemyMove>().TakeDamage(damage);
+                //Destroying projectile upon collision
+                Destroy(gameObject);
             }
         }
 
