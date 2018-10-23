@@ -547,6 +547,16 @@ Prefab:
       propertyPath: projectile
       value: 
       objectReference: {fileID: 1745121465}
+    - target: {fileID: 114967360778601276, guid: 216743926b0fe0c4fa27c150eabacbf2,
+        type: 2}
+      propertyPath: timeBetweenShots
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114967360778601276, guid: 216743926b0fe0c4fa27c150eabacbf2,
+        type: 2}
+      propertyPath: startTimeBetweenShots
+      value: 0.25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 216743926b0fe0c4fa27c150eabacbf2, type: 2}
   m_IsPrefabAsset: 0
