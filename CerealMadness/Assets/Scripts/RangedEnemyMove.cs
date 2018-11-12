@@ -27,6 +27,10 @@ public class RangedEnemyMove : MonoBehaviour {
         }else if(Vector2.Distance(transform.position, target.position) < stoppingDistance && Vector2.Distance(transform.position, target.position) > retreatDistance){
               //Stopping enemy from moving
               transform.position = this.transform.position;
+        }else if (Vector2.Distance(transform.position, target.position) < retreatDistance){
+            transform.position = Vector2.MoveTowards(transform.position, target.position, -speed * Time.deltaTime);
+
         }
     }
 }
+
