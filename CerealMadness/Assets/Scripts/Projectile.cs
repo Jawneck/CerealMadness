@@ -20,6 +20,12 @@ public class Projectile : MonoBehaviour {
                 hit.collider.GetComponent<RangedEnemyMove>().TakeDamage(damage);
                 //Destroying projectile upon collision
                 Destroy(gameObject);
+            }else if (hit.collider.CompareTag("Enemy")){
+                Debug.Log("Enemy hit");
+                //Calling TakeDamage function upon collision
+                hit.collider.GetComponent<EnemyMove>().TakeDamage(damage);
+                //Destroying projectile upon collision
+                Destroy(gameObject);
             }
         }
 
