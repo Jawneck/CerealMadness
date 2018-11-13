@@ -8,11 +8,19 @@ public class RangedEnemyMove : MonoBehaviour {
     public float speed;
     public float stoppingDistance;
     public float retreatDistance;
+    private int health = 5;
 
     public Transform target;
 
+    private ParticleSystem particleSystem;
 
-	void Start () {
+    void Awake()
+    {
+        particleSystem = GetComponent<ParticleSystem>();
+    }
+
+
+    void Start () {
         //The target is the object which has the tag "Player"
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
@@ -31,6 +39,19 @@ public class RangedEnemyMove : MonoBehaviour {
             transform.position = Vector2.MoveTowards(transform.position, target.position, -speed * Time.deltaTime);
 
         }
+
+        //Destroying enemy when health reaches 0
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+        //Starts particle system when enemy takes damage
+        particleSystem.Play();
     }
 }
 

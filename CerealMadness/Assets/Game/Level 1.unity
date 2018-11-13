@@ -156,6 +156,10 @@ Prefab:
       propertyPath: m_Name
       value: KitchenTile
       objectReference: {fileID: 0}
+    - target: {fileID: 1323289067067076, guid: e1ac1d9af115bb440b48c4d4d8f67332, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1ac1d9af115bb440b48c4d4d8f67332, type: 2}
   m_IsPrefabAsset: 0
@@ -220,7 +224,7 @@ Prefab:
     - target: {fileID: 114985529129568004, guid: 26183ec60d285d246bb2af7956ffd7e9,
         type: 2}
       propertyPath: whatIsSolid.m_Bits
-      value: 256
+      value: 1280
       objectReference: {fileID: 0}
     - target: {fileID: 1405325449838544, guid: 26183ec60d285d246bb2af7956ffd7e9, type: 2}
       propertyPath: m_TagString
@@ -239,7 +243,7 @@ GameObject:
   - component: {fileID: 560720143}
   - component: {fileID: 560720142}
   - component: {fileID: 560720141}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: KitchenTile (6)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -340,7 +344,7 @@ GameObject:
   - component: {fileID: 935447067}
   - component: {fileID: 935447066}
   - component: {fileID: 935447065}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: KitchenTile (5)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -450,7 +454,7 @@ MonoBehaviour:
   speed: 5
   stoppingDistance: 5
   retreatDistance: 2
-  player: {fileID: 0}
+  target: {fileID: 0}
 --- !u!1001 &1432537727
 Prefab:
   m_ObjectHideFlags: 0
@@ -584,7 +588,7 @@ GameObject:
   - component: {fileID: 1700815176}
   - component: {fileID: 1700815175}
   - component: {fileID: 1700815174}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: KitchenTile (4)
   m_TagString: Ground
   m_Icon: {fileID: 0}
