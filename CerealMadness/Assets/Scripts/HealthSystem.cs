@@ -13,4 +13,12 @@ public class HealthSystem{
     public int GetHealth(){
         return health;
     }
+
+    public void Damage(int damageAmount){
+        health -= damageAmount;
+    }
+
+    public void Heal(int healAmount){
+        health += healAmount;
+    }
 }
