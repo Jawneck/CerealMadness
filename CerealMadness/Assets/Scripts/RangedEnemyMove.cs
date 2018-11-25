@@ -14,8 +14,7 @@ public class RangedEnemyMove : MonoBehaviour {
 
     private ParticleSystem particleSystem;
 
-    void Awake()
-    {
+    void Awake(){
         particleSystem = GetComponent<ParticleSystem>();
     }
 
@@ -41,14 +40,12 @@ public class RangedEnemyMove : MonoBehaviour {
         }
 
         //Destroying enemy when health reaches 0
-        if (health <= 0)
-        {
+        if (health <= 0){
             Destroy(gameObject);
         }
     }
 
-    public void TakeDamage(int damage)
-    {
+    public void TakeDamage(int damage){
         health -= damage;
         //Starts particle system when enemy takes damage
         particleSystem.Play();

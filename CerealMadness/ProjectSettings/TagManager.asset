@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Projectile
   - Particle
+  - RangedEnemy
   layers:
   - Default
   - TransparentFX

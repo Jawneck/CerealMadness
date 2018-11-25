@@ -14,7 +14,7 @@ public class Projectile : MonoBehaviour {
         //Detecting if projectile hits enemy
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.up, distance, whatIsSolid);
         if(hit.collider != null){
-            if (hit.collider.CompareTag("Enemy")){
+            if (hit.collider.CompareTag("RangedEnemy")){
                 Debug.Log("Enemy hit");
                 //Calling TakeDamage function upon collision
                 hit.collider.GetComponent<RangedEnemyMove>().TakeDamage(damage);
