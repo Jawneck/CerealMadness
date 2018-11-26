@@ -11,6 +11,13 @@ public class PlayerMove : MonoBehaviour {
     private bool touchingGround;
     private float playerBottomRayDistance = 0.2f;
 
+    
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        PlayerHealth.health = -1;
+        Debug.Log(collision.name);
+    }
+
     // Use this for initialization
     void Start (){
 		
