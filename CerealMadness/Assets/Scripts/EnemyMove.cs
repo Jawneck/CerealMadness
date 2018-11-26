@@ -10,6 +10,11 @@ public class EnemyMove : MonoBehaviour {
 
     private ParticleSystem particleSystem;
 
+    public int damage;
+    public float lastAttackTime;
+    public float attackDelay;
+
+
     void Awake(){
         particleSystem = GetComponent<ParticleSystem>();
     }
@@ -35,6 +40,16 @@ public class EnemyMove : MonoBehaviour {
         //Destroying enemy when health reaches 0
         if(health <= 0){
             Destroy(gameObject);
+        }
+
+        float distanceToPlayer = Vector3.Distance(transform.position, target.position);
+        if(distanceToPlayer < stoppingDistance)
+        {
+            if(Time.time >  lastAttackTime + attackDelay){
+                target.SendMessage("TakeDamage", damage);
+                lastAttackTime = Time.time;
+            }
+
         }
 	}
 

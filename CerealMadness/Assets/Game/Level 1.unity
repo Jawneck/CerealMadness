@@ -4814,6 +4814,21 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 114878246186452036, guid: d673e873185b79f44aa10ffb4f368efd,
+        type: 2}
+      propertyPath: attackRange
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114878246186452036, guid: d673e873185b79f44aa10ffb4f368efd,
+        type: 2}
+      propertyPath: damage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114878246186452036, guid: d673e873185b79f44aa10ffb4f368efd,
+        type: 2}
+      propertyPath: attackDelay
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d673e873185b79f44aa10ffb4f368efd, type: 2}
   m_IsPrefabAsset: 0
