@@ -4758,6 +4758,26 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!50 &300036726
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 300036723}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1000
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &457260387
 Prefab:
   m_ObjectHideFlags: 0
@@ -4804,7 +4824,7 @@ Prefab:
     - target: {fileID: 61553806412103582, guid: d673e873185b79f44aa10ffb4f368efd,
         type: 2}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1279890684167146, guid: d673e873185b79f44aa10ffb4f368efd, type: 2}
       propertyPath: m_TagString
@@ -5014,6 +5034,7 @@ GameObject:
   - component: {fileID: 681996990}
   - component: {fileID: 681996989}
   - component: {fileID: 681996988}
+  - component: {fileID: 681996991}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -5099,6 +5120,17 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &681996991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 681996986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50989a2ed106f864cba5e429c5581e86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &935447064
 GameObject:
   m_ObjectHideFlags: 0
@@ -5289,6 +5321,26 @@ MonoBehaviour:
   stoppingDistance: 5
   retreatDistance: 2
   target: {fileID: 0}
+--- !u!50 &1422553877
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1422553875}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1000
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &1432537727
 Prefab:
   m_ObjectHideFlags: 0
@@ -5834,6 +5886,11 @@ Prefab:
     - target: {fileID: 1438883051792258, guid: 8491dc9cf2f44ea48a303c012bf84540, type: 2}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 61946958694930510, guid: 8491dc9cf2f44ea48a303c012bf84540,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114243179660693192, guid: 8491dc9cf2f44ea48a303c012bf84540, type: 2}

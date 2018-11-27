@@ -13,7 +13,6 @@ public class PlayerDeath : MonoBehaviour {
         PlayerHealth.health = Health;
         Debug.Log(Health);
         
-
         if (Health <= 0)
         {
             Die();
