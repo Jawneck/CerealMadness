@@ -9,13 +9,18 @@ public class RangedEnemyMove : MonoBehaviour {
     public float stoppingDistance;
     public float retreatDistance;
     private int health = 5;
+    private float timeBetweenShots;
+    public float startTimeBetweenShots;
 
+    public GameObject projectile;
     public Transform target;
 
     private ParticleSystem particleSystem;
 
     void Awake(){
         particleSystem = GetComponent<ParticleSystem>();
+
+        timeBetweenShots = startTimeBetweenShots;
     }
 
 

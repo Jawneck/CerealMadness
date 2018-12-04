@@ -28,12 +28,14 @@ public class PauseMenu : MonoBehaviour {
 
     void ActivateMenu()
     {
+        Time.timeScale = 0;
         pauseMenuUI.SetActive(true);
 
     }
 
     void DeactivateMenu()
     {
+        Time.timeScale = 1;
         pauseMenuUI.SetActive(false);
     }
 }
