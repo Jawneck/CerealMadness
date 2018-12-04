@@ -44,6 +44,13 @@ public class RangedEnemyMove : MonoBehaviour {
 
         }
 
+        if(timeBetweenShots <= 0){
+            Instantiate(projectile, transform.position, Quaternion.identity);
+            timeBetweenShots = startTimeBetweenShots;
+        } else{
+            timeBetweenShots -= Time.deltaTime;  
+        }
+
         //Destroying enemy when health reaches 0
         if (health <= 0){
             Destroy(gameObject);
