@@ -6067,6 +6067,8 @@ MonoBehaviour:
   speed: 5
   stoppingDistance: 5
   retreatDistance: 2
+  startTimeBetweenShots: 2
+  projectile: {fileID: 1405325449838544, guid: 26183ec60d285d246bb2af7956ffd7e9, type: 2}
   target: {fileID: 0}
 --- !u!50 &1422553877
 Rigidbody2D:
