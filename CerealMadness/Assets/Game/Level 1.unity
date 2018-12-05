@@ -1163,8 +1163,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01ff7901a0d856e499f04aab8a4ee2fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInZone: 0
-  levelToLoad: 
 --- !u!114 &2056838056 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114537144262563632, guid: 198e3409eb76bd44ab7fbd5dd13a0ff7,
@@ -1209,6 +1207,131 @@ Prefab:
     - target: {fileID: 4958566567899102, guid: 0ebb6c006b7dc7749be18012d823585b, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 198386802122879052, guid: 0ebb6c006b7dc7749be18012d823585b,
+        type: 2}
+      propertyPath: lengthInSec
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198386802122879052, guid: 0ebb6c006b7dc7749be18012d823585b,
+        type: 2}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 198386802122879052, guid: 0ebb6c006b7dc7749be18012d823585b,
+        type: 2}
+      propertyPath: InitialModule.gravityModifier.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198386802122879052, guid: 0ebb6c006b7dc7749be18012d823585b,
+        type: 2}
+      propertyPath: ShapeModule.arc.value
+      value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 198386802122879052, guid: 0ebb6c006b7dc7749be18012d823585b,
+        type: 2}
+      propertyPath: ShapeModule.m_Texture
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 199636607503435054, guid: 0ebb6c006b7dc7749be18012d823585b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198386802122879052, guid: 0ebb6c006b7dc7749be18012d823585b,
+        type: 2}
+      propertyPath: CustomDataModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198386802122879052, guid: 0ebb6c006b7dc7749be18012d823585b,
+        type: 2}
+      propertyPath: TrailModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 199636607503435054, guid: 0ebb6c006b7dc7749be18012d823585b,
+        type: 2}
+      propertyPath: m_RenderMode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 199636607503435054, guid: 0ebb6c006b7dc7749be18012d823585b,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+    - target: {fileID: 198386802122879052, guid: 0ebb6c006b7dc7749be18012d823585b,
+        type: 2}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 198386802122879052, guid: 0ebb6c006b7dc7749be18012d823585b,
+        type: 2}
+      propertyPath: ShapeModule.m_Scale.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 198386802122879052, guid: 0ebb6c006b7dc7749be18012d823585b,
+        type: 2}
+      propertyPath: ShapeModule.type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 198386802122879052, guid: 0ebb6c006b7dc7749be18012d823585b,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198386802122879052, guid: 0ebb6c006b7dc7749be18012d823585b,
+        type: 2}
+      propertyPath: ShapeModule.m_TextureColorAffectsParticles
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198386802122879052, guid: 0ebb6c006b7dc7749be18012d823585b,
+        type: 2}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.7169812
+      objectReference: {fileID: 0}
+    - target: {fileID: 198386802122879052, guid: 0ebb6c006b7dc7749be18012d823585b,
+        type: 2}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.037201855
+      objectReference: {fileID: 0}
+    - target: {fileID: 198386802122879052, guid: 0ebb6c006b7dc7749be18012d823585b,
+        type: 2}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.037201855
+      objectReference: {fileID: 0}
+    - target: {fileID: 198386802122879052, guid: 0ebb6c006b7dc7749be18012d823585b,
+        type: 2}
+      propertyPath: SizeModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198386802122879052, guid: 0ebb6c006b7dc7749be18012d823585b,
+        type: 2}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[0].outSlope
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198386802122879052, guid: 0ebb6c006b7dc7749be18012d823585b,
+        type: 2}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198386802122879052, guid: 0ebb6c006b7dc7749be18012d823585b,
+        type: 2}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].outSlope
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198386802122879052, guid: 0ebb6c006b7dc7749be18012d823585b,
+        type: 2}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[0].time
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198386802122879052, guid: 0ebb6c006b7dc7749be18012d823585b,
+        type: 2}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[0].value
+      value: 0.70529175
+      objectReference: {fileID: 0}
+    - target: {fileID: 198386802122879052, guid: 0ebb6c006b7dc7749be18012d823585b,
+        type: 2}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].time
+      value: 0.24926758
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ebb6c006b7dc7749be18012d823585b, type: 2}
