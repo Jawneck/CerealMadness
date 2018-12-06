@@ -8,7 +8,7 @@ public class RangedEnemyMove : MonoBehaviour {
     public float speed;
     public float stoppingDistance;
     public float retreatDistance;
-    private int health = 5;
+    private int health = 2;
     private float timeBetweenShots;
     public float startTimeBetweenShots;
 

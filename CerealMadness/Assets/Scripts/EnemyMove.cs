@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class EnemyMove : MonoBehaviour {
 
-    private float enemySpeed = 2;
-    private float stoppingDistance = 0.5f;
-    private int health = 5;
+    public float enemySpeed = 2;
+    public float stoppingDistance = 0.5f;
+    private int health = 3;
 
     private ParticleSystem particleSystem;
 
@@ -42,7 +42,7 @@ public class EnemyMove : MonoBehaviour {
             Destroy(gameObject);
         }
 
-        float distanceToPlayer = Vector3.Distance(transform.position, target.position);
+        float distanceToPlayer = Vector2.Distance(transform.position, target.position);
         if(distanceToPlayer < stoppingDistance)
         {
             if(Time.time >  lastAttackTime + attackDelay){
