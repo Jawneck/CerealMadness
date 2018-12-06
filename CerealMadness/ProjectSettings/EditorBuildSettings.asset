@@ -12,21 +12,24 @@ EditorBuildSettings:
     path: Assets/Game/MainMenu.unity
     guid: 14a70d15085325647b8213e7ae2b6941
   - enabled: 1
-    path: Assets/Game/LevelSelects.unity
-    guid: 9ba9ac4c39905a046930c89626768fdb
-  - enabled: 0
     path: Assets/Game/LevelSelect.unity
-    guid: 7701b30d15879b64bbe85d6f744b534b
+    guid: 9ba9ac4c39905a046930c89626768fdb
   - enabled: 1
     path: Assets/Game/Level 1.unity
-    guid: a166e4523bcce5a40939bf01f04e26aa
+    guid: 8493c01e79fcaa04d9d35cc89a8129c1
   - enabled: 1
     path: Assets/Game/Level 2.unity
     guid: 81f2502c89442794c9a06a50faa8ef78
-  - enabled: 1
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: Assets/Game/Level 3.unity
     guid: f98373502f2d8e14394b5d0dbc09e013
-  - enabled: 1
+  - enabled: 0
     path: Assets/Game/Level 4.unity
     guid: c76544c461f6a6b4b803a5e1aed17093
+  - enabled: 1
+    path: Assets/Game/TestLevel.unity
+    guid: a166e4523bcce5a40939bf01f04e26aa
   m_configObjects: {}
