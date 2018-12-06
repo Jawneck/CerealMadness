@@ -320,6 +320,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 50812707354402178, guid: d673e873185b79f44aa10ffb4f368efd,
+        type: 2}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61636958738753408, guid: d673e873185b79f44aa10ffb4f368efd,
+        type: 2}
+      propertyPath: m_EdgeRadius
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d673e873185b79f44aa10ffb4f368efd, type: 2}
   m_IsPrefabAsset: 0
@@ -638,6 +648,16 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114504115164078248, guid: 0a38656ac6896064ba075c4b24e52262,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114264788905641190, guid: 0a38656ac6896064ba075c4b24e52262,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224311865480964472, guid: 0a38656ac6896064ba075c4b24e52262,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -728,6 +748,46 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114504115164078248, guid: 0a38656ac6896064ba075c4b24e52262,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114504115164078248, guid: 0a38656ac6896064ba075c4b24e52262,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114504115164078248, guid: 0a38656ac6896064ba075c4b24e52262,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1296121754}
+    - target: {fileID: 114504115164078248, guid: 0a38656ac6896064ba075c4b24e52262,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Exit
+      objectReference: {fileID: 0}
+    - target: {fileID: 114504115164078248, guid: 0a38656ac6896064ba075c4b24e52262,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114264788905641190, guid: 0a38656ac6896064ba075c4b24e52262,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114264788905641190, guid: 0a38656ac6896064ba075c4b24e52262,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114264788905641190, guid: 0a38656ac6896064ba075c4b24e52262,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2093281614}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a38656ac6896064ba075c4b24e52262, type: 2}
   m_IsPrefabAsset: 0
@@ -737,6 +797,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 530921967}
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &1296121754 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114902278334577530, guid: fa8372ed2ed929540a73c9024455c82d,
+    type: 2}
+  m_PrefabInternal: {fileID: 44128866}
+  m_Script: {fileID: 11500000, guid: a5078c743c6e6d84999cff756897cc72, type: 3}
 --- !u!1001 &1432537727
 Prefab:
   m_ObjectHideFlags: 0
@@ -1025,7 +1091,7 @@ SpriteRenderer:
   m_Size: {x: 0.64, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1649619977
@@ -5660,7 +5726,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00088639185, y: 0}
+  m_Offset: {x: -0.0013807341, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -5671,8 +5737,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.23512697, y: 0.64}
-  m_EdgeRadius: 0
+  m_Size: {x: 0.40289408, y: 0.64}
+  m_EdgeRadius: 0.1
 --- !u!50 &1649619982
 Rigidbody2D:
   serializedVersion: 4
@@ -5680,7 +5746,7 @@ Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1649619975}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -5913,6 +5979,11 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 530921967}
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!1 &2093281614 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1678423074107632, guid: fa8372ed2ed929540a73c9024455c82d,
+    type: 2}
+  m_PrefabInternal: {fileID: 44128866}
 --- !u!1001 &2120316382
 Prefab:
   m_ObjectHideFlags: 0
