@@ -15,9 +15,6 @@ EditorBuildSettings:
     path: Assets/Game/LevelSelect.unity
     guid: 9ba9ac4c39905a046930c89626768fdb
   - enabled: 1
-    path: Assets/Game/Settings.unity
-    guid: cc17851c138a99d4fb49d1aff54ec931
-  - enabled: 1
     path: Assets/Game/Level 1.unity
     guid: 8493c01e79fcaa04d9d35cc89a8129c1
   - enabled: 1
@@ -29,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game/Level 4.unity
     guid: c76544c461f6a6b4b803a5e1aed17093
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000

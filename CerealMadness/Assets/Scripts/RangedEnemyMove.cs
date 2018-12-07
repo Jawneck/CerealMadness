@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RangedEnemyMove : MonoBehaviour {
 
-
+    //Constants and Variables
     public float speed;
     public float stoppingDistance;
     public float retreatDistance;
@@ -45,6 +45,7 @@ public class RangedEnemyMove : MonoBehaviour {
         }
 
         if(timeBetweenShots <= 0){
+            //Launching projectile to target and stopping enemy from firing indefinitely.
             Instantiate(projectile, transform.position, Quaternion.identity);
             timeBetweenShots = startTimeBetweenShots;
         } else{

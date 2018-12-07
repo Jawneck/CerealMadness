@@ -3,49 +3,42 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PauseMenu : MonoBehaviour {
-
+public class PauseMenu : MonoBehaviour
+{
+    //Constants and Variables
     public static bool GameIsPaused = false;
-
     public GameObject pauseMenuUI;
 
 
-	// Update is called once per frame
-	void Update () {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (GameIsPaused)
-            {
+    // Update is called once per frame
+    void Update(){
+        //Pausing game with Esc key
+        if (Input.GetKeyDown(KeyCode.Escape)){
+            if (GameIsPaused){
                 Resume();
             }
-            else
-            {
+            else{
                 Pause();
             }
         }
-	}
+    }
 
-    public void Resume()
-    {
+    //Method which unpauses the game
+    public void Resume(){
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
     }
 
-    void Pause()
-    {
+    //Method which pauses the game
+    void Pause(){
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
     }
 
-    public void LoadSettings()
-    {
-        SceneManager.LoadScene("Settings");
-    }
-
-    public void QuitGame()
-    {
+    //Method which quits the level
+    public void QuitGame(){
         SceneManager.LoadScene("MainMenu");
     }
 }

@@ -13,26 +13,26 @@ public class PlayerDeath : MonoBehaviour {
         PlayerHealth.health = Health;
         Debug.Log(Health);
         
-        if (Health <= 0)
-        {
+        //Killing player if health reaches zero
+        if (Health <= 0){
             Die();
         }
 
+        //Killing player if they fall from edge of environment
         if (gameObject.transform.position.y < -10){
             Die();
         }
     }
 
-    public void TakeDamage(int damage)
-    {
+    //Method which deals damage to the player
+    public void TakeDamage(int damage){
         Health -= damage;
-        if (Health <= 0)
-        {
+        if (Health <= 0){
             Debug.Log("Dead");
         }
     }
 
-    //Upon "Death" the prototype file is loaded, effectively restarting the game.
+    //Upon "Death" splash screen scene is loaded, effectively restarting the game.
     void Die(){
         SceneManager.LoadScene(0);
     }

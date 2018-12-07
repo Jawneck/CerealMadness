@@ -2,22 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MilkBottleAI : MonoBehaviour
+public class MilkBottleMove : MonoBehaviour
 {
-
+    //Constants and Variables
     public float enemySpeed = 2;
     public float stoppingDistance = 0.5f;
     private int health = 5;
-
-    private ParticleSystem particleSystem;
-
     public int damage;
     public float lastAttackTime;
     public float attackDelay;
+    private ParticleSystem particleSystem;
 
-
-    void Awake()
-    {
+    void Awake(){
         particleSystem = GetComponent<ParticleSystem>();
     }
 
@@ -25,34 +21,30 @@ public class MilkBottleAI : MonoBehaviour
     private Transform target;
 
     // Use this for initialization
-    void Start()
-    {
+    void Start(){
         //The target is the object which has the tag "Player"
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update(){
         //Checking the distance between the enemy and its target, allowing enemy to follow until stoppingDistance
-        if (Vector2.Distance(transform.position, target.position) > stoppingDistance)
-        {
+        if (Vector2.Distance(transform.position, target.position) > stoppingDistance){
 
             //Moving the enemy from its position towards the targets postion at its given speed
             transform.position = Vector2.MoveTowards(transform.position, target.position, enemySpeed * Time.deltaTime);
         }
 
         //Destroying enemy when health reaches 0
-        if (health <= 0)
-        {
+        if (health <= 0){
             Destroy(gameObject);
         }
 
         float distanceToPlayer = Vector2.Distance(transform.position, target.position);
+        //Dealing damage to the player when in range
         if (distanceToPlayer < stoppingDistance)
-        {
-            if (Time.time > lastAttackTime + attackDelay)
-            {
+        {//Giving a delay to the attack time to stop attack being continuous
+            if (Time.time > lastAttackTime + attackDelay){
                 target.SendMessage("TakeDamage", damage);
                 lastAttackTime = Time.time;
             }

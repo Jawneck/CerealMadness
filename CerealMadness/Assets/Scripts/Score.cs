@@ -4,8 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class Score : MonoBehaviour
-{
+public class Score : MonoBehaviour{
 
     //Constants and Variables
     public float time = 100;
@@ -44,5 +43,6 @@ public class Score : MonoBehaviour
 
     //A method which totals up the player score
     void CountScore(){
+
     }
 }

@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour {
 
+    //Constants and Variables
     public float offset;
-
     public GameObject projectile;
     public Transform shootingPoint;
-
     public float timeBetweenShots;
     public float startTimeBetweenShots;
 

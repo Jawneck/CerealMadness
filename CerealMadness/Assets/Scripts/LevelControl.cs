@@ -6,11 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class LevelControl : MonoBehaviour {
 
+    public int levelIndex;
+
     private void OnTriggerEnter2D(Collider2D other)
-    {
+    {   //Checking if player has entered the end level area trigger
         if (other.CompareTag("Player"))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        {   //Loading the next scene in the build.
+            SceneManager.LoadScene(levelIndex);
         }
     }
 }

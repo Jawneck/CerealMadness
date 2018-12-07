@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Projectile : MonoBehaviour {
-
+    
+    //Constants and Variables
     public float speed;
     public float distance;
     public int damage = 1;
@@ -15,27 +16,24 @@ public class Projectile : MonoBehaviour {
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.up, distance, whatIsSolid);
         if (hit.collider != null)
         {
-            if (hit.collider.CompareTag("RangedEnemy"))
-            {
+            if (hit.collider.CompareTag("RangedEnemy")){
                 Debug.Log("Enemy hit");
                 //Calling TakeDamage function upon collision
                 hit.collider.GetComponent<RangedEnemyMove>().TakeDamage(damage);
                 //Destroying projectile upon collision
                 Destroy(gameObject);
             }
-            else if (hit.collider.CompareTag("Enemy"))
-            {
+            else if (hit.collider.CompareTag("Enemy")){
                 Debug.Log("Enemy hit");
                 //Calling TakeDamage function upon collision
                 hit.collider.GetComponent<EnemyMove>().TakeDamage(damage);
                 //Destroying projectile upon collision
                 Destroy(gameObject);
             }
-            else if (hit.collider.CompareTag("MilkBottle"))
-            {
+            else if (hit.collider.CompareTag("MilkBottle")){
                 Debug.Log("Enemy hit");
                 //Calling TakeDamage function upon collision
-                hit.collider.GetComponent<MilkBottleAI>().TakeDamage(damage);
+                hit.collider.GetComponent<MilkBottleMove>().TakeDamage(damage);
                 //Destroying projectile upon collision
                 Destroy(gameObject);
             }

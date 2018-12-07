@@ -4,16 +4,14 @@ using UnityEngine;
 
 public class EnemyMove : MonoBehaviour {
 
+    //Constants and Variables
     public float enemySpeed = 2;
     public float stoppingDistance = 0.5f;
     private int health = 3;
-
-    private ParticleSystem particleSystem;
-
     public int damage;
     public float lastAttackTime;
     public float attackDelay;
-
+    private ParticleSystem particleSystem;
 
     void Awake(){
         particleSystem = GetComponent<ParticleSystem>();
@@ -43,8 +41,9 @@ public class EnemyMove : MonoBehaviour {
         }
 
         float distanceToPlayer = Vector2.Distance(transform.position, target.position);
+        //Dealing damage to the player when in range
         if(distanceToPlayer < stoppingDistance)
-        {
+        {//Giving a delay to the attack time to stop attack being continuous
             if(Time.time >  lastAttackTime + attackDelay){
                 target.SendMessage("TakeDamage", damage);
                 lastAttackTime = Time.time;
